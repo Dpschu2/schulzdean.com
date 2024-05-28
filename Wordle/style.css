@@ -1,0 +1,223 @@
+html,
+body {
+    background: #222226;
+}    
+html,
+body,
+.body-container {
+    height: 100%;
+}
+.content-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bold;
+}
+.matrix-container {
+    height: calc(100% - 200px);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+}
+.matrix {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+.matrix.rm-bt-pad {
+    padding-bottom: 0;
+}
+.matrix.changeHeight {
+    height: calc(100% - 40px);
+}
+.game-message {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 5px;
+    max-height: 0;
+    transition: 0.3s ease;
+    line-height: 20px;
+}
+.keyboard-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+#keyboard {
+    max-width: 520px;
+    width: 100%;
+    height: 90%;
+}
+button {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    padding: 0;
+    margin: 0 6px 0 0;
+    height: 55px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #b7b5b5;
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+    outline: none !important;
+    touch-action: manipulation;
+}
+button .fa {
+    font-size: 25px;
+}
+button:not([data-state='correct']):not([data-state='present']):not(button[data-state='absent']):hover {
+    background-color: #a19e9e;
+}
+button:not([data-state='correct']):not([data-state='present']):not(button[data-state='absent']):active {
+    background-color: #8f8e8e;
+}
+button:last-of-type {
+    margin: 0;
+}
+button[data-state='correct'] {
+    background-color: #538d4e;
+}
+button[data-state='present'] {
+    background-color: #b59f3b;
+}
+button[data-state='absent'] {
+    background-color: #3a3a3c;
+}
+button.new-game {
+    background: #617dff !important;
+}
+.one-and-a-half {
+    flex: 1.5;
+    font-size: 15px;
+}
+.half {
+    flex: 0.5;
+}
+.row {
+    display: flex;
+    width: 100%;
+    margin: 0 0 8px;
+    justify-content: center;
+    height: calc(160px/3);
+}
+.matrix-row {
+    position: relative;
+    width: calc(85vh - 200px);
+    max-width: 100%;
+    height: calc(100%/6);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box {
+    height: 90%;
+    width: calc(90%/5);
+    background: #8b858547;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 3px #000000b3;
+}
+.matrix-row.done .box {
+    border: 1px solid #7c7c7c;
+}
+.box[data-state='correct'] {
+    background-color: #538d4e;
+}
+.box[data-state='win'] {
+    background-color: #44bb3a;
+}
+.box[data-state='present'] {
+    background-color: #b59f3b;
+}
+.box[data-state='absent'] {
+    background-color: #141416;
+}
+.box[data-state='darken'] {
+    background-color: #141416;
+}
+.letter {
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+@media(max-width: 250px) {
+    .letter {
+        font-size: 1.3em;
+    }
+}
+@media(min-height: 500px) {
+    .letter {
+        font-size: 2.9em;
+    }
+}
+.game-stats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c5c3c3;
+    font-size: 12px;
+}
+.game-stats-container:first-child {
+    margin-right: 20px;
+}
+@media(max-width: 460px) {
+    button {
+        font-size: 15px;
+        height: 48px;
+    }
+    button:not([data-state='correct']):not([data-state='present']):not(button[data-state='absent']):hover {
+        background-color: #c5c3c3;
+    }
+    .one-and-a-half {
+        font-size: 11px;
+    }
+    .fa {
+        font-size: 20px;
+    }
+}
+@media(max-width: 380px) {
+    button {
+        margin: 0 3px 0 0;
+        height: 42px;
+    }
+    .row {
+        margin: 0 0 -6px;
+    }
+    .keyboard-container {
+        width: calc(100% + 18px);
+    }
+}
+

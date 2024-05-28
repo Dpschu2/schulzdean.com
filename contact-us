@@ -1,0 +1,35 @@
+<html lang="en-US"><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CJVY Media - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css?v=10">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel='icon' href='/cjvyimages/cjvy_favicon.ico' type='image/x-icon'/ >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body style="position: relative;">
+
+<div id='nav' class='top-color'>
+    <h1 class='title'><a href='/'><img src='/cjvyimages/cjvy-color.png'></a></h1>
+    <div class='links'>
+        <a href='/about'>What Is CJVY Media?</a>
+        <a href='/contact-us'>Contact Us</a>
+        <a href='/case-studies'>Case Studies</a>
+        <a href='/testimonials'>Testimonials</a>
+        <a href='/about-us'>What Inspires Us</a>
+    </div>
+</div>
+<div class='internal-head'>
+    <h1>Contact Us</h1>
+    <img src='/cjvyimages/business.jpg' class='internal-img'>
+</div>
+
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/global.js?v=12"></script>
+</body></html>

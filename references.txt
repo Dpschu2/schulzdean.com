@@ -1,0 +1,27 @@
+<p class="command-list">References</p>
+<div class="table-flex">
+    <div class="table-container refs-container" style="border-left: 2px solid #47553C;padding-left: 10px;">
+        <table class="table1">
+            <tr>
+                <td class="highlight" style="font-size: 16px;text-decoration: underline;">Name</td>
+                <td class="highlight" style="font-size: 16px;text-decoration: underline;">Relation</td>
+                <td class="highlight" style="font-size: 16px;text-decoration: underline;">Contact</td>
+            </tr>
+            <tr>
+                <td>Andrew Johnson</td>
+                <td>Colleague during time at Illinois State</td>
+                <td>(630) 639-7776</td>
+            </tr>
+            <tr>
+                <td>Abe Ramseyer</td>
+                <td>Ex-coworker at Creative Sites Media</td>
+                <td>(309) 265-7866</td>
+            </tr>
+            <tr>
+                <td>Matthew Krause</td>
+                <td>Friend/Personal</td>
+                <td>(847) 305-6977</td>
+            </tr>
+        </table>
+    </div>
+</div>
