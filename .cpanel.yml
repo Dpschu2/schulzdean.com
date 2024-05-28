@@ -1,0 +1,10 @@
+##### THIS ALLOWS US TO DEPLOY THE SITE FROM A GIT REPO ######—Deployment:
+Tasks:
+– export DEPLOYPATH=/home/v9uzg7ex9csj/public_html/schulzdean.com
+– /bin/cp -R .vscode $DEPLOYPATH
+– /bin/cp -R assets $DEPLOYPATH
+– /bin/cp -R css $DEPLOYPATH
+– /bin/cp -R fonts $DEPLOYPATH
+– /bin/cp -R img $DEPLOYPATH
+– /bin/cp -R js $DEPLOYPATH
+/bin/cp index.html $DEPLOYPATH
