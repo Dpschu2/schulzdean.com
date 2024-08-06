@@ -177,6 +177,14 @@ h3, .heading {
     height: 182px;
     object-fit: cover;
 }
+.projimg {
+    position: relative;
+}
+.projimg a {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
 
 .projectinfo {
   width: 100%;
